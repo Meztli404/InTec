@@ -1,0 +1,14 @@
+div.barra{
+    padding: 20px 0;
+    background-color: #38A3A5;
+    text-align: center;
+}
+div.barra .icono{
+    width: 8em;
+    margin: auto;
+}
+
+div.barra a{
+    margin: 0 10px ;
+}
+

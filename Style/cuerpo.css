@@ -1,0 +1,57 @@
+.c{
+    max-width: 100dvw;
+}
+.titulo1{
+    font-size: 6.7rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px 0;
+}
+.titulo{
+    font-size: 5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px 0;
+}
+.titulo2{
+    color: #133f65ff;
+    font-weight: bold;
+    font-size: 2.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.txt{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* CSS de Curso */
+.tics{
+    font-size: 5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px 60px;
+}
+.pad > div{
+    padding: 0 80px
+}
+/* Cuerpo */
+
+
+/* recursos */
+/* Cuerpo */
+.none:hover {
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+.none p,a{
+    text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+
+  .pad > div{
+    padding: 8px;}
+    .tics{
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+}
+}
+
+

@@ -1,0 +1,106 @@
+.w3-sofia {
+  font-family: Sofia, cursive;
+}
+
+/*Footer*/
+div.fot {
+  color: white;
+  background-color: #005a71ff;
+  padding: 40px;
+}
+
+div.fot h2 {
+  font-size: x-large;
+  margin: 5px 0;
+}
+
+div.fot p {
+  margin: 0;
+  padding: 0;
+
+}
+
+div.fot a {
+  text-align: left;
+  font-size: small;
+  text-decoration: none;
+}
+
+.button {
+  background-color: #1eacacff;
+}
+
+/*Barras*/
+.br1 {
+  background-color: #88c0cdff;
+  text-align: center;
+}
+
+.tp {
+  padding: 15px 0;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.brnb {
+  border-color: #38A3A5 !important;
+  padding: 35px 0 !important;
+}
+
+/*Segunda Barra*/
+.n {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 30px;
+
+}
+
+.n a {
+  text-decoration: none;
+}
+
+.b1 {
+  background-color: #1b5481ff;
+}
+
+.b2 {
+  background-color: #226697ff;
+}
+
+.b3 {
+  background-color: #3777a5ff;
+}
+
+.b4 {
+  background-color: #3d86b3ff;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .icono {
+    width: 100vw;
+  }
+}
+/*Terminacion de Barra*/
+div.barra {
+  padding: 20px 0;
+  background-color: #38A3A5;
+  text-align: center;
+}
+
+.icono {
+  width: 250px;
+}
+
+div.barra a {
+  margin: 0 10px;
+}
+
+.w3-border-n {
+  border-color: #38A3A5 !important;
+}
