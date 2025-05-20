@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/W3.css">
+    <link rel="stylesheet" href="Style/barra.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/cuerpo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Futuro Seguro</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <!--Barra de Navegacion-->
+    <div class="w3-row br1">
+        <div class="w3-col s12 m3">
+             <a href="index.html"><img src="Recursos/iconologo.png" alt="logo" class="w3-left icono"></a>
+        </div>
+        <div class="w3-col s12 m6">
+            <h2 class="tp">El dinero no compra la felicidad, pero el ahorro te da paz y seguridad</h2>
+        </div>
+        <div class="w3-col s12 m3">
+            <a href="" class="w3-button w3-mobile  brnb  w3-hover-border-black">
+                <i class='fas fa-user-alt'></i><br>Iniciar Sesion </a>
+           <!-- <button onclick="myFunction('Recursos')" class="w3-button w3-block w3-center">
+                <i class="w3-xlarge fa fa-bars"></i></button>-->
+        </div>
+    </div>
+
+    <div id="Recursos" class="w3-show">
+        <div class="w3-row w3-center">
+            <div class="w3-col m3 n b1"><a href="recursos.html">Recursos</a></div>
+            <div class="w3-col m3 n b2"><a href="simulador.html">Simuladores</a></div>
+            <div class="w3-col m3 n b3"><a href="Blog.html">Blog</a></div>
+            <div class="w3-col m3 n b4"><a href="nosotros.html">Sobre Nosotros</a></div>
+        </div>
+    </div>
+    <!-- /Barra de Navegacion -->
+    <h1 class="w3-center titulo1">Simulador</h1>
+    <!-- Cuerpo -->
+    <h2 class="w3-center titulo">Ahorro</h2>
+    <div class="w3-container">
+        <div class="w3-row pad w3-bottombar w3-border-black w3-padding-24">
+        <div class="w3-col s12 m6 l6 ">
+            <div class="w3-container txt">
+                <p>El ahorro es la parte del ingreso que no se gasta de manera inmediata,
+                    sino que se reserva o guarda para usarla en el futuro. <br>
+                    Consiste en posponer el consumo presente con el objetivo de contar con Recursos
+                    en caso de necesidad, alcanzar metas financieras o invertir.
+                </p>
+                <img src="Recursos/ahorro.jpg" alt="" class="w3-image">
+            </div>
+
+        </div>
+
+        <div class="w3-col s12 m6 l6">
+            <h3 class="titulo2">Empezamos con lo Basico</h3>
+
+            <span>Ingresos Mensuales:</span>
+            <input type="text" class="w3-input w3-border w3-round-large"
+                placeholder="Para estimar cuanto se puede ahorrar." required>
+
+            <span>Gastos Mensuales fijos y variables:</span>
+            <input type="text" class="w3-input w3-border w3-round-large"
+                placeholder="Para calcular el ahorro neto posible." required>
+
+            <span>Objetivo de Ahorro:</span>
+            <input type="text" class="w3-input w3-border w3-round-large"
+                placeholder='Ej. "Retiro en 20 añoz","Fondo de emergencia".' required>
+
+            <span>Plazo de ahorro(en meses o años):</span>
+            <input type="text" class="w3-input w3-border w3-round-large"
+                placeholder="Define el horizonte de la simulacion.." required>
+                <br>
+            <img src="Recursos/grafia.jpg" alt="" class="w3-image">
+        </div>
+    </div>
+    </div>
+    
+
+    <hr>
+    <!-- PPP -->
+    <h2 class="w3-center titulo">PPR <br>
+        (Plan Personal de Retiro)
+    </h2>
+    <div class="w3-row pad">
+        <div class="w3-col s12 m6 l6 ">
+            <h3 class="w3-center w3-xlarge"></h3>
+
+        </div>
+        <div class="w3-col s12 m6 l6">
+            <div class="w3-container txt">
+                <p>Visualiza hoy el retiro que quieres mañana:
+                    simula tu Plan Personal de Retiro y Descubre cuanto necesitas 
+                    ahorrar y para asegurar tu tranquilidad financiera en el futuro.
+                </p>
+                <img src="Recursos/libro.jpg" alt="Libro" class="w3-image">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- /Cuerpo -->
+<br><br><br>
+    <!-- Footer -->
+
+    <div class="w3-row fot w3-center">
+        <div class="w3-col s12 m4 l4">
+            <h2>Legales</h2>
+            <p><a href="">Aviso de Privacidad</a></p>
+            <p><a href="">Terminos de Uso</a></p>
+        </div>
+        <div class="w3-col s12 m4 l4">
+            <h2>Redes Social</h2>
+            <p><a href="">Aviso de Privacidad</a></p>
+            <p><a href="">Terminos de Uso</a></p>
+        </div>
+        <div class="w3-col s12 m4 l4">
+            <h2>Ayuda</h2>
+            <p><a href="" class="w3-btn button">Contactanos</a></p>
+        </div>
+    </div>
+    <!-- /Footer -->
+
+
+    <script>
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
+
+</html>
