@@ -67,7 +67,7 @@
 }
 
 /* Pension Blog */
-.titulo1 { font-size: 2em; margin-top: 20px; }
+.titulo1 { font-size: 3em; margin-top: 20px; }
 .contenido img { max-width: 50%; height: auto; margin: 10px 0; }
 
 
@@ -213,3 +213,75 @@ h2.tn {
     height: 325px;
 }
 
+/* Estilo de Ia */
+.fab-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #0b7dda;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .fab-float:hover {
+      background-color: #095c9d;
+    }
+
+    @media (max-width: 600px) {
+      .fab-float {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+      }
+
+      .fab-float i {
+        font-size: 18px;
+      }
+    }
+
+    @media (min-width: 601px) {
+      .fab-float i {
+        font-size: 22px;
+      }
+    }
+
+    /* Mensaje de Estilo de la IA */
+     .toast {
+      visibility: hidden;
+      min-width: 250px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 8px;
+      padding: 12px;
+      position: fixed;
+      z-index: 9999;
+      bottom: 90px;
+      right: 20px;
+      font-size: 14px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .toast.show {
+      visibility: visible;
+      animation: fadein 0.5s, fadeout 0.5s 4s;
+    }
+
+    @keyframes fadein {
+      from { bottom: 60px; opacity: 0; }
+      to { bottom: 90px; opacity: 1; }
+    }
+
+    @keyframes fadeout {
+      from { bottom: 90px; opacity: 1; }
+      to { bottom: 60px; opacity: 0; }
+    }

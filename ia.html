@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/W3.css">
+    <link rel="stylesheet" href="Style/barra.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/cuerpo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Futuro Seguro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <!--Barra de Navegacion-->
+    <div class="w3-row br1">
+        <div class="w3-col s12 m3">
+            <a href="index.html"><img src="Recursos/iconologo.png" alt="logo" class="w3-left icono"></a>
+        </div>
+        <div class="w3-col s12 m6">
+            <h2 class="tp">El dinero no compra la felicidad, pero el ahorro te da paz y seguridad</h2>
+        </div>
+        <div class="w3-col s12 m3">
+            <a href="" class="w3-button w3-mobile  brnb  w3-hover-border-black">
+                <i class='fas fa-user-alt w3-xxlarge'></i><br>Iniciar Sesion </a>
+            <!-- <button onclick="myFunction('Recursos')" class="w3-button w3-block w3-center">
+                <i class="w3-xlarge fa fa-bars"></i></button>-->
+        </div>
+    </div>
+
+    <div id="Recursos" class="w3-show">
+        <div class="w3-row w3-center">
+            <div class="w3-col m3 n b1"><a href="recursos.html">Recursos</a></div>
+            <div class="w3-col m3 n b2"><a href="simulador.html">Simuladores</a></div>
+            <div class="w3-col m3 n b3"><a href="Blog.html">Blog</a></div>
+            <div class="w3-col m3 n b4"><a href="nosotros.html">Sobre Nosotros</a></div>
+        </div>
+    </div>
+    <!-- /Barra de Navegacion -->
+
+    <!-- Cuerpo -->
+    <h1 class="w3-center titulo1">Asistente Financiero IA</h1>
+    <div class="w3-container w3-padding-32">
+        <div class="w3-card w3-light-blue w3-round-large w3-padding-large" style="max-width:800px; margin:auto;">
+            <div id="chat-box" class="w3-container"
+                style="height:400px; overflow-y:auto; background:rgb(255, 255, 255); border-radius:8px; padding:16px;">
+                <div class="w3-margin-bottom">
+                    <p><strong>IA:</strong> ¡Hola! Soy tu asistente de finanzas. ¿En qué puedo ayudarte hoy?</p>
+                </div>
+            </div>
+            <div class="w3-section">
+                <label for="user-input" class="w3-large"><strong>Tu pregunta:</strong></label>
+                <input type="text" id="user-input" class="w3-input w3-border w3-round-large"
+                    placeholder="Ej. ¿Qué tarjeta de crédito me conviene?">
+                <button onclick="enviarPregunta()" class="w3-button w3-indigo w3-round-large w3-margin-top"
+                    style="width:100%;">Preguntar a la IA</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- /Cuerpo -->
+    <br><br><br>
+    <!-- Footer -->
+
+    <div class="w3-row fot w3-center">
+        <div class="w3-col s12 m4 l4">
+            <h2>Legales</h2>
+            <p><a href="">Aviso de Privacidad</a></p>
+            <p><a href="">Terminos de Uso</a></p>
+        </div>
+        <div class="w3-col s12 m4 l4">
+            <h2>Redes Social</h2>
+            <p><a href="">Aviso de Privacidad</a></p>
+            <p><a href="">Terminos de Uso</a></p>
+        </div>
+        <div class="w3-col s12 m4 l4">
+            <h2>Ayuda</h2>
+            <p><a href="" class="w3-btn button">Contactanos</a></p>
+        </div>
+    </div>
+    <!-- /Footer -->
+
+    <!-- Script -->
+   <script>
+    const respuestasPorPalabraClave = {
+        ahorro: [
+            "Una buena forma de empezar a ahorrar es separar al menos el 10% de tus ingresos.",
+            "Haz del ahorro un gasto fijo mensual, como si fuera una factura.",
+            "Puedes usar la regla 50/30/20 para equilibrar necesidades, deseos y ahorro."
+        ],
+        deuda: [
+            "Prioriza pagar tus deudas con mayor interés primero.",
+            "Evita endeudarte para cubrir otros créditos: busca consolidar si es necesario.",
+            "Pagar más del mínimo en tus deudas reduce intereses a largo plazo."
+        ],
+        tarjeta: [
+            "Elige tarjetas con bajo interés y sin anualidad si es posible.",
+            "Recuerda pagar el total mensual para evitar intereses.",
+            "Usa tu tarjeta de crédito como si fuera dinero en efectivo: no gastes más de lo que puedes pagar."
+        ],
+        inversion: [
+            "Empieza invirtiendo en instrumentos seguros como Cetes o fondos indexados.",
+            "Nunca inviertas dinero que puedas necesitar a corto plazo.",
+            "Diversifica tus inversiones para minimizar riesgos."
+        ],
+        presupuesto: [
+            "Un presupuesto mensual te ayuda a controlar tus gastos y ahorrar.",
+            "Registra todos tus ingresos y egresos para saber a dónde va tu dinero.",
+            "Puedes usar aplicaciones móviles para facilitar la creación de un presupuesto."
+        ],
+        emergencia: [
+            "Tu fondo de emergencia debe cubrir al menos de 3 a 6 meses de gastos básicos.",
+            "Guarda tu fondo de emergencia en una cuenta de alta liquidez.",
+            "El fondo de emergencia es prioridad antes de invertir."
+        ]
+    };
+
+    const respuestasGenerales = [
+        "Puedes repetir tu pregunta con más detalle para que pueda ayudarte mejor.",
+        "¡Buena pregunta! Considera enfocarte en tu situación actual primero.",
+        "Gestionar bien tus finanzas es el primer paso hacia un futuro estable.",
+        "La educación financiera es clave para tomar buenas decisiones. ¡Sigue así!"
+    ];
+
+    function enviarPregunta() {
+        const input = document.getElementById('user-input');
+        const pregunta = input.value.trim().toLowerCase();
+        if (pregunta === '') return;
+
+        const chatBox = document.getElementById('chat-box');
+
+        // Mostrar mensaje del usuario
+        const userMessage = document.createElement('div');
+        userMessage.className = 'w3-margin-bottom';
+        userMessage.innerHTML = `<p><strong>Usuario:</strong> ${pregunta}</p>`;
+        chatBox.appendChild(userMessage);
+
+        // Buscar respuesta basada en palabras clave
+        let respuesta = '';
+        for (const palabra in respuestasPorPalabraClave) {
+            if (pregunta.includes(palabra)) {
+                const opciones = respuestasPorPalabraClave[palabra];
+                respuesta = opciones[Math.floor(Math.random() * opciones.length)];
+                break;
+            }
+        }
+
+        // Si no se encuentra palabra clave, usar respuesta general
+        if (!respuesta) {
+            respuesta = respuestasGenerales[Math.floor(Math.random() * respuestasGenerales.length)];
+        }
+
+        // Mostrar respuesta
+        const iaMessage = document.createElement('div');
+        iaMessage.className = 'w3-margin-bottom';
+        iaMessage.innerHTML = `<p><strong>IA:</strong> ${respuesta}</p>`;
+        chatBox.appendChild(iaMessage);
+
+        // Limpiar input y bajar scroll
+        input.value = '';
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+</script>
+
+</body>
+
+</html>
