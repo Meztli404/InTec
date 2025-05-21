@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="Style/Servicios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
         </div>
         <div class="w3-col s12 m3">
             <a href="" class="w3-button w3-mobile  brnb  w3-hover-border-black">
-                <i class='fas fa-user-alt'></i><br>Iniciar Sesion </a>
+                <i class='fas fa-user-alt w3-xxlarge'></i><br>Iniciar Sesion </a>
             <!-- <button onclick="myFunction('Recursos')" class="w3-button w3-block w3-center">
                 <i class="w3-xlarge fa fa-bars"></i></button>-->
         </div>
@@ -186,7 +187,13 @@
         </div>
     </div>
 
-
+    <!-- Codigo de Inteligencia -->
+    <a href="ia.html" class="fab-float w3-button w3-round-large w3-black">
+        <i class="fas fa-robot"></i>
+    </a>
+    <div id="toast" class="toast">
+        ¿Necesitas ayuda? Haz clic en el asistente de IA.
+    </div>
 
 
     <!-- /Cuerpo -->
@@ -219,6 +226,14 @@
                 x.className = x.className.replace(" w3-show", "");
             }
         }
+        window.onload = function () {
+            var toast = document.getElementById("toast");
+            toast.classList.add("show");
+            // Ocultar después de 5 segundos automáticamente
+            setTimeout(function () {
+                toast.classList.remove("show");
+            }, 5000);
+        };
     </script>
 </body>
 
