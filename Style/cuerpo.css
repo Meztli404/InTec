@@ -1,57 +1,215 @@
-.c{
+.c {
     max-width: 100dvw;
 }
-.titulo1{
+
+.titulo1 {
     font-size: 6.7rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 20px 0;
 }
-.titulo{
+
+.titulo {
     font-size: 5rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 20px 0;
 }
-.titulo2{
+
+.titulo2 {
     color: #133f65ff;
     font-weight: bold;
     font-size: 2.2rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
-.txt{
+
+.txt {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 /* CSS de Curso */
-.tics{
+.tics {
     font-size: 5rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 10px 60px;
 }
-.pad > div{
+
+.pad>div {
     padding: 0 80px
 }
+
 /* Cuerpo */
 
 
-/* recursos */
+/* Recursos */
+
 /* Cuerpo */
-.none:hover {
-    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+.imgr{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
 }
-.none p,a{
+.r1{
+    background-image: url(../Recursos/ahorro.jpg);
+}
+.r2{
+   background-image: url(../Recursos/bbva.jpg); 
+}
+.r3{
+    background-image: url(../Recursos/grafica.jpg);
+}
+.r4{
+    background-image: url(../Recursos/Pensiones.jpeg);
+}
+
+/* Pension Blog */
+.titulo1 { font-size: 2em; margin-top: 20px; }
+.contenido img { max-width: 50%; height: auto; margin: 10px 0; }
+
+
+.cd{
+    border: 1px solid rgb(134, 134, 134);
+    border-radius: 10px;
+}
+.btn-rd{
+ border-radius: 0 0 8px 8px;  
+}
+.title-card{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+.none:hover {
+    box-shadow: 0 10px 8px 0 rgba(92, 92, 92, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.none p,
+a {
     text-decoration: none;
 }
+
 @media only screen and (max-width: 600px) {
 
-  .pad > div{
-    padding: 8px;}
-    .tics{
-    font-size: 1.2rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 0;
-}
+    .pad>div {
+        padding: 8px;
+    }
+
+    .tics {
+        font-size: 1.2rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 0;
+    }
 }
 
+/* Sobre nosotros */
+/* Estilos */
+.ns-con {
+    margin: 50px 120px;
+    font-size: 1.5rem;
+    border-left: 25px solid #88bfcbff;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.br {
+    border: 1px solid black;
+}
+
+/* Texto Titulo*/
+h2.tn {
+    font-size: 2rem;
+    color: rgb(0, 133, 163);
+}
+
+/* Cartas */
+.cd-bg {
+    /* width: 400px; */
+    background-color: #88bfcbff;
+    border-radius: 50px 50px 12px 12px;
+    padding: 12px;
+}
+.pd{
+    padding: 15px;
+}
+.im{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 50px;
+}
+.im1{
+    background-image: url(../Recursos/Alex.jpeg);
+}
+.im2{
+    background-image: url(../Recursos/Fatima.jpeg);
+}
+.im3{
+    background-image: url(../Recursos/Samuel.jpeg);
+    background-position:top!important;
+}
+.im4{
+    background-image: url(../Recursos/Victor.jpeg);
+}
+/* .tl-cd {
+    color: white;
+    background-color: #216698ff;
+    text-align: center;
+} */
+
+.img-card-ns {
+    width: 100%;
+    height: 500px;
+    border-radius: 50px 50px 15px 15px;
+}
+
+
+/* ------------------------------------------------------- */
+/* Blog  Estilo*/
+.wc{
+    width: 400px;
+    margin: 50px;
+    background-color: #88bfcbff;
+}
+.wcc{
+    background-color: #88bfcbff;
+}
+.img1{
+    background-image: url(../Recursos/libro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 325px;
+}
+.img2{
+    background-image: url(../Recursos/Pensiones.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 325px;
+}
+.img3{
+    background-image: url(../Recursos/Seguro.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 325px;
+}
+.img4{
+    background-image: url(../Recursos/credito.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 325px;
+}
 
